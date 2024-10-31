@@ -3,7 +3,8 @@ import java.util.*;
 class Solution {
     public int[] solution(int[] arr) {        
         List<Integer> list = new ArrayList<>();
-        
+
+        // indexOf를 쓰기 위해 int 배열을 Integer 배열로 바꿈
         Integer[] intList = Arrays.stream(arr)
             .boxed()
             .toArray(Integer[]::new);
